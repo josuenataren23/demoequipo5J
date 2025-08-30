@@ -10,6 +10,43 @@
     {
         background-color: blue;        
         align-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-family:Verdana, Geneva, Tahoma, sans-serif ; 
+        box-sizing: border-box;
+    }
+    nav
+    {
+        background-color: #333;
+        padding: 0rem;
+        margin-bottom: 5%;
+        border-radius: 10px;
+    }
+    nav ul
+    {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0%;
+        padding: 0%;
+        align-items: center;
+    }
+    nav li
+    {
+        margin: 1rem;
+    }
+    nav a
+    {
+        color: white;
+        text-decoration: none;
+        font-weight:lighter;
+        transition: color 0.3s;
+        padding: 0.5rem 1rem;
+    }
+    nav a:hover
+    {
+        background-color: blue;
+        border-radius: 10px;
     }
     h1
     {
@@ -19,10 +56,38 @@
     {
         color: aqua;
     }
+    img
+    {
+        width: 100%;
+        border-radius: 1%;
+    }
+
+    @media(max-width: 600px)
+    {
+        nav ul
+        {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        nav li
+        {
+            margin: 0.5rem 0;
+            text-align: left;
+            width: 100%;
+        }
+    }
 </style>
 <body>
     <H2>DIAMANTES GRATIS</H2>
     <h1>FREE FIRE </h1>
-    <img src="images.jpg">
+         <nav>
+        <ul style="color: white;">
+            <li ><a href="index.html" style="color: white;">Inicio</a></li>
+            <li><a href="alexia.html" style="color: white;">Alexia</a></li>
+            <li><a href="emilio.html" style="color: white;">Emilio</a></li>
+            <li><a href="cesar.html" style="color: white;">Cesar</a></li>
+        </ul>
+    </nav>
+    <img src="imagen.png">
 </body>
 </html>
